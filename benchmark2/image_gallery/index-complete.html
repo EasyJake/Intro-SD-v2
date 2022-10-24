@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial;
+    }
+
+    .header,
+    footer {
+      text-align: center;
+      padding: 32px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column {
+      -ms-flex: 25%; /* IE10 */
+      flex: 30%;
+      max-width: 35%;
+      padding: 0 4px;
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuisine of New Orleans | Image Gallery</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <h1>Cuisine of New Orleans</h1>
+      <h2>
+        The cuisine of New Orleans encompasses common dishes and foods in New Orleans, Louisiana.
+      </h2>
+      <p>
+        It is perhaps the most distinctively recognized regional cuisine in the
+        United States. Some of the dishes originated in New Orleans, while
+        others are common and popular in the city and surrounding areas, such as
+        the Mississippi River Delta and southern Louisiana. The cuisine of New
+        Orleans is heavily influenced by Creole cuisine, Cajun cuisine, and soul
+        food.[1][2] Seafood also plays a prominent part in the cuisine.[1]
+        Dishes invented in New Orleans include po' boy and muffuletta
+        sandwiches, oysters Rockefeller and oysters Bienville, pompano en
+        papillote, and bananas Foster, among others.
+      </p>
+    </header>
+
+    <!-- Photo Grid -->
+    <section class="row">
+      <div class="column">
+        <img src="https://cdn.pixabay.com/photo/2013/04/03/12/00/crawfish-99850_960_720.jpg" style="width: 100%" />
+        <img src="https://cdn.pixabay.com/photo/2019/04/20/19/41/paella-4142573_960_720.jpg" style="width: 100%" />
+        <img src="https://cdn.pixabay.com/photo/2015/01/05/07/52/french-quarters-589004_960_720.jpg" style="width: 100%" />
+      </div>
+      <div class="column">
+        <img src="https://cdn.pixabay.com/photo/2020/06/29/22/13/cajun-5354597_960_720.jpg" style="width: 100%" />
+        <img src="https://cdn.pixabay.com/photo/2018/04/05/17/31/coffee-3293499_960_720.jpg" style="width: 100%" />
+        <img src="https://cdn.pixabay.com/photo/2018/03/20/03/00/food-3241999_960_720.jpg" style="width: 100%" />
+      </div>
+      <div class="column">
+        <img src="https://cdn.pixabay.com/photo/2016/08/30/11/01/new-orleans-1630343_960_720.jpg" style="width: 100%" />
+        <img src="https://cdn.pixabay.com/photo/2017/06/22/00/42/new-orleans-2429187_960_720.jpg" style="width: 100%" />
+        <img src="https://cdn.pixabay.com/photo/2020/02/04/21/57/ship-4819457_960_720.jpg" style="width: 100%" />
+      </div>
+    </section>
+    <footer class="footer">Images from pixabay</footer>
+  </body>
+</html>
